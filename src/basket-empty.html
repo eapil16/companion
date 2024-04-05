@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.formstyler.css">
+    <link rel="stylesheet" href="assets/css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Компаньон</title>
+  </head>
+  <body>
+    <div class="wrapper"> 
+      <header class="header header-inside"> 
+        <div class="container">
+          <div class="header-flex"> 
+            <div class="header-top"> 
+              <div class="header-top__act">
+                <button class="header-city" type="button" data-bs-toggle="modal" data-bs-target="#cityModal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13.002" height="13" viewBox="0 0 13.002 13">
+                    <path id="Без_названия" data-name="Без названия" d="M8.386,12.037c-.458,1.262-1.747,1.308-2.05,0l-1-4.319-4.32-1c-1.308-.3-1.262-1.663,0-2.122L12.177.034a.674.674,0,0,1,.847.847Z" transform="translate(-0.056 -0.001)" fill="#b6bac2"></path>
+                  </svg><span>Калининградская область</span>
+                </button>
+                <div class="header-phones">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path id="Path_3923" data-name="Path 3923" d="M35.621,33.353a4.147,4.147,0,0,1-2.985,2.274,5.742,5.742,0,0,1-3.549-.413,17.934,17.934,0,0,1-8.808-8.808,5.742,5.742,0,0,1-.413-3.549,4.147,4.147,0,0,1,2.274-2.985,1.28,1.28,0,0,1,1.589.415c.569.775,1.132,1.647,1.7,2.591a1.277,1.277,0,0,1-.172,1.544c-.354.365-.725.711-1.113,1.045a1.194,1.194,0,0,0-.185,1.592,18.514,18.514,0,0,0,4.48,4.48,1.194,1.194,0,0,0,1.592-.185c.333-.389.68-.759,1.045-1.113a1.277,1.277,0,0,1,1.544-.172c.944.563,1.817,1.126,2.591,1.7A1.28,1.28,0,0,1,35.621,33.353Z" transform="translate(-19.746 -19.747)" fill="#b6bac2"></path>
+                  </svg><a class="phone" href="tel:89157933540">+7-915-793-35-40</a>
+                  <p>или</p><a class="phone" href="tel:89961942176">+7-996-194-21-76</a>
+                </div>
+              </div>
+              <ul class="header-top__menu">
+                <li class="header-top__menu_item"> <a class="header-top__menu_link" href="#">О компании</a></li>
+                <li class="header-top__menu_item"> <a class="header-top__menu_link" href="#">Конкурсы</a></li>
+                <li class="header-top__menu_item"> <a class="header-top__menu_link" href="#">Покупателям</a></li>
+                <li class="header-top__menu_item"> <a class="header-top__menu_link" href="#">Бренды</a></li>
+                <li class="header-top__menu_item"> <a class="header-top__menu_link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="header-bottom"> 
+              <div class="header-logo"> <a href="/"><img src="assets/images/logo.svg" alt=""></a></div>
+              <div class="header-content"> 
+                <div class="header-content__act">
+                  <button class="catalog-button" type="button">Каталог товаров</button>
+                  <div class="menu-catalog">
+                    <div class="menu-catalog__act_mobile">
+                      <form class="header-search">
+                        <input class="form-control" type="text" placeholder="Поиск">
+                        <button class="button" type="submit">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16">
+                            <path id="Path_3918" data-name="Path 3918" d="M18.422,15.459l-2.87-2.9a6.922,6.922,0,0,0,1.735-4.578,6.794,6.794,0,1,0-6.794,6.876,6.714,6.714,0,0,0,3.6-1.05l2.983,3.019a.932.932,0,0,0,1.33,0A.955.955,0,0,0,18.422,15.459ZM5.6,7.976a4.889,4.889,0,1,1,4.9,4.956A4.933,4.933,0,0,1,5.6,7.976Z" transform="translate(-3.7 -1.1)"></path>
+                          </svg>
+                        </button>
+                      </form>
+                      <div class="menu-catalog__close">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+<path id="Path_4041" data-name="Path 4041" d="M5.586,6.736-.263,12.586l-1.151-1.15,5.85-5.85L-1.414-.263-.263-1.414l5.849,5.85,5.849-5.85L12.586-.263,6.736,5.586l5.849,5.85-1.15,1.15Z" transform="translate(1.414 1.414)" fill="#b6bac2"/>
+</svg>
+                      </div>
+                    </div>
+                    <ul class="main-menu" id="mainMenu"> 
+                      <li class="main-menu__item main-menu__all"> <a class="main-menu__link" href="#">Все категории
+                          <svg xmlns="http://www.w3.org/2000/svg" width="8.439" height="13.413" viewBox="0 0 8.439 13.413">
+                            <path id="Path_3959" data-name="Path 3959" d="M-16471,15982l-.008-.007-6-6-1,1,5.012,5-5.012,5.006,1,.994Z" transform="translate(16478.707 -15975.293)" fill="#9ca0a7" stroke="rgba(0,0,0,0)" stroke-width="1"></path>
+                          </svg></a></li>
+                      <li class="main-menu__item main-menu__item_dropdown active"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+<g id="Group_1795" data-name="Group 1795" transform="translate(-554 -238)">
+<rect id="Rectangle_499" data-name="Rectangle 499" width="19" height="19" transform="translate(554 238)" fill="none"/>
+<g id="Ellipse_17" data-name="Ellipse 17" transform="translate(554 238)" fill="none" stroke="#b6bac2" stroke-width="1.2">
+<circle cx="9.5" cy="9.5" r="9.5" stroke="none"/>
+<circle cx="9.5" cy="9.5" r="8.9" fill="none"/>
+</g>
+<g id="Ellipse_18" data-name="Ellipse 18" transform="translate(559 243)" fill="none" stroke="#b6bac2" stroke-width="1.2">
+<circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+<circle cx="4.5" cy="4.5" r="3.9" fill="none"/>
+</g>
+</g>
+</svg></span><span class="item-text">Автотовары</span></a>
+                        <ul class="main-menu-submenu active"><a class="main-menu__item__back" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8.439" height="13.413" viewBox="0 0 8.439 13.413">
+<path id="Path_3959" data-name="Path 3959" d="M-16478,15982l.008-.007,6-6,1,1-5.012,5,5.012,5.006-1,.994Z" transform="translate(16478.732 -15975.293)" fill="#9ca0a7" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+</svg><span class="text">Назад</span></a>
+                          <div class="main-menu-submenu__title">Автотовары</div>
+                          <div class="main-menu-submenu__banner"> 
+                            <p>Финальные скидки до 80% на школьную продукцию</p>
+                            <div class="item-image"><img src="assets/images/menu-banner.png" alt=""></div>
+                          </div>
+                          <div class="main-menu-submenu__menu"> 
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Бумага для офисной техники</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Бумага специальная</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Бумага форматная</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Бумажная продукция для офиса</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Бланки</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Бумага для заметок, блокноты, записные книжки</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Деловое планирование</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Книги учета</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Конверты и пакеты почтовые</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Ролики для офисной техники</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Компьютерные и мобильные аксессуары</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Зарядные устройства</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">ИБП, сетевые фильтры, стабилизаторы</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Кабели, разветвители</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Наушники, микрофоны, колонки, веб-камеры</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Носители информации</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Программное обеспечение</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Устройства ввода и манипуляторы</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Мебель</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Кресла и стулья офисные</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для детей</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для кухонь, баров и кафе</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для офиса</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для персонала</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для руководителей</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебельные аксессуары</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Подарки, сувениры, награды</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Наградная и поздравительная продукция</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Подарочная упаковка</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Рамки для фотографий и дипломов</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Сувенирная продукция</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Презентация, коммуникация</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Аксессуары для досок и флипчартов</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Бейджи и держатели</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Демонстрационные системы</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Доски информационные, флипчарты</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Подставки рекламные, ценникодержатели</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Принтеры, МФУ, картриджи</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">МФУ</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Принтеры</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Расходные материалы для печатающей техники</a></li>
+                              </ul>
+                            </li>
+                          </div>
+                          <ul class="main-menu-submenu__logos"> 
+                            <li class="main-menu-submenu__logos_item"> <a class="main-menu-submenu__logos_link" href="#"><img src="assets/images/logo-1.png" alt=""></a></li>
+                            <li class="main-menu-submenu__logos_item"> <a class="main-menu-submenu__logos_link" href="#"><img src="assets/images/logo-2.png" alt=""></a></li>
+                            <li class="main-menu-submenu__logos_item"> <a class="main-menu-submenu__logos_link" href="#"><img src="assets/images/logo-3.png" alt=""></a></li>
+                            <li class="main-menu-submenu__logos_item"> <a class="main-menu-submenu__logos_link" href="#"><img src="assets/images/logo-4.png" alt=""></a></li>
+                          </ul>
+                        </ul>
+                      </li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="19" viewBox="0 0 15 19">
+<path id="paper" d="M16.857,19.575H6.143a.763.763,0,0,1-.535-.215.661.661,0,0,1-.2-.471V4.111a.661.661,0,0,1,.2-.471.763.763,0,0,1,.535-.215h6.295V7.32a1.339,1.339,0,0,0,.384.94,1.3,1.3,0,0,0,.928.39h3.844V18.889a.661.661,0,0,1-.2.471A.763.763,0,0,1,16.857,19.575ZM19,8.65V18.889a2.1,2.1,0,0,1-.628,1.493A2.159,2.159,0,0,1,16.857,21H6.143a2.159,2.159,0,0,1-1.515-.618A2.1,2.1,0,0,1,4,18.889V4.111a2.1,2.1,0,0,1,.628-1.493A2.159,2.159,0,0,1,6.143,2h7.5L19,7.278ZM13.844,4.185l3.085,3.04H13.844Z" transform="translate(-4 -2)" fill="#b6bac2" fill-rule="evenodd"/>
+</svg></span><span class="item-text">Бумага</span></a>
+                        <ul class="main-menu-submenu"><a class="main-menu__item__back" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8.439" height="13.413" viewBox="0 0 8.439 13.413">
+<path id="Path_3959" data-name="Path 3959" d="M-16478,15982l.008-.007,6-6,1,1-5.012,5,5.012,5.006-1,.994Z" transform="translate(16478.732 -15975.293)" fill="#9ca0a7" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+</svg><span class="text">Назад</span></a>
+                          <div class="main-menu-submenu__title">Бумага</div>
+                          <div class="main-menu-submenu__banner"> 
+                            <p>Скидки до 50% на бумагу</p>
+                            <div class="item-image"><img src="assets/images/menu-banner.png" alt=""></div>
+                          </div>
+                          <div class="main-menu-submenu__menu"> 
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Компьютерные и мобильные аксессуары</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Зарядные устройства</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">ИБП, сетевые фильтры, стабилизаторы</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Кабели, разветвители</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Наушники, микрофоны, колонки, веб-камеры</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Носители информации</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Программное обеспечение</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Устройства ввода и манипуляторы</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Мебель</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Кресла и стулья офисные</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для детей</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для кухонь, баров и кафе</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для офиса</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для персонала</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для руководителей</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебельные аксессуары</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Подарки, сувениры, награды</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Наградная и поздравительная продукция</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Подарочная упаковка</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Рамки для фотографий и дипломов</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Сувенирная продукция</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Презентация, коммуникация</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Аксессуары для досок и флипчартов</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Бейджи и держатели</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Демонстрационные системы</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Доски информационные, флипчарты</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Подставки рекламные, ценникодержатели</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Принтеры, МФУ, картриджи</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">МФУ</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Принтеры</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Расходные материалы для печатающей техники</a></li>
+                              </ul>
+                            </li>
+                          </div>
+                          <ul class="main-menu-submenu__logos"> 
+                            <li class="main-menu-submenu__logos_item"> <a class="main-menu-submenu__logos_link" href="#"><img src="assets/images/logo-1.png" alt=""></a></li>
+                            <li class="main-menu-submenu__logos_item"> <a class="main-menu-submenu__logos_link" href="#"><img src="assets/images/logo-2.png" alt=""></a></li>
+                            <li class="main-menu-submenu__logos_item"> <a class="main-menu-submenu__logos_link" href="#"><img src="assets/images/logo-3.png" alt=""></a></li>
+                          </ul>
+                        </ul>
+                      </li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19">
+<path id="Size-24-9" d="M10.813,5.863v.619h-.479a.246.246,0,0,0-.208.268V8.523L6.481,11.88A1.463,1.463,0,0,0,6,13.02v6.4A1.639,1.639,0,0,0,7.719,21h6.188a1.639,1.639,0,0,0,1.719-1.583V6.75a.313.313,0,0,0-.344-.317h-.344V5.8h1.719A.313.313,0,0,0,17,5.483,3.674,3.674,0,0,0,13.219,2h-5.5a.313.313,0,0,0-.344.317v.605H6.344A.313.313,0,0,0,6,3.239V4.386a.313.313,0,0,0,.344.317H7.375V5.42L6.069,7.89c-.091.168.082.507.275.507H7.719c.137,0,.275-.19.275-.19L9.3,5.863Zm3.438,1.6H11.5v1.7L7.395,12.945c-.021.02-.02.029-.02.075v6.4c-.007.124.277.158.344.158h6.188c.068,0,.351-.034.344-.158V7.462ZM8.75,3.425h4.469a2.481,2.481,0,0,1,2,.95h-1.66V6.482H12.188V4.438H8.75Z" transform="translate(-6 -2)" fill="#bf3385" fill-rule="evenodd"/>
+</svg></span><span class="item-text">Бытовая и проф. химия</span></a>
+                        <ul class="main-menu-submenu"><a class="main-menu__item__back" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8.439" height="13.413" viewBox="0 0 8.439 13.413">
+<path id="Path_3959" data-name="Path 3959" d="M-16478,15982l.008-.007,6-6,1,1-5.012,5,5.012,5.006-1,.994Z" transform="translate(16478.732 -15975.293)" fill="#9ca0a7" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+</svg><span class="text">Назад</span></a>
+                          <div class="main-menu-submenu__title">Бытовая и проф. химия</div>
+                          <div class="main-menu-submenu__banner"> 
+                            <p>Текст банера</p>
+                            <div class="item-image"><img src="assets/images/menu-banner.png" alt=""></div>
+                          </div>
+                          <div class="main-menu-submenu__menu"> 
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Мебель</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Кресла и стулья офисные</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для детей</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для кухонь, баров и кафе</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для офиса</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для персонала</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для руководителей</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебельные аксессуары</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Подарки, сувениры, награды</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Наградная и поздравительная продукция</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Подарочная упаковка</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Рамки для фотографий и дипломов</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Сувенирная продукция</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Презентация, коммуникация</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Аксессуары для досок и флипчартов</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Бейджи и держатели</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Демонстрационные системы</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Доски информационные, флипчарты</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Подставки рекламные, ценникодержатели</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Принтеры, МФУ, картриджи</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">МФУ</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Принтеры</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Расходные материалы для печатающей техники</a></li>
+                              </ul>
+                            </li>
+                          </div>
+                          <ul class="main-menu-submenu__logos"> 
+                            <li class="main-menu-submenu__logos_item"> <a class="main-menu-submenu__logos_link" href="#"><img src="assets/images/logo-1.png" alt=""></a></li>
+                            <li class="main-menu-submenu__logos_item"> <a class="main-menu-submenu__logos_link" href="#"><img src="assets/images/logo-2.png" alt=""></a></li>
+                          </ul>
+                        </ul>
+                      </li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+<g id="Group_1795" data-name="Group 1795" transform="translate(-554 -238)">
+<rect id="Rectangle_499" data-name="Rectangle 499" width="19" height="19" transform="translate(554 238)" fill="none"/>
+<g id="Group" transform="translate(556 238)">
+<path id="Shape" d="M4.778,14.508a5.229,5.229,0,0,0,5.288,5.155,5.229,5.229,0,0,0,5.288-5.155,5.229,5.229,0,0,0-5.288-5.156,5.229,5.229,0,0,0-5.288,5.156ZM10.066,10.8a3.714,3.714,0,1,1-3.808,3.712A3.766,3.766,0,0,1,10.066,10.8Z" transform="translate(-2 -3)" fill="#b6bac2" fill-rule="evenodd"/>
+<path id="Shape-2" data-name="Shape" d="M0,0V19H16V0ZM14.462,17.5H1.538V1.5H14.462v16Z" fill="#b6bac2" fill-rule="evenodd"/>
+<ellipse id="Oval" cx="0.965" cy="0.941" rx="0.965" ry="0.941" transform="translate(10.996 2.974)" fill="#b6bac2"/>
+<rect id="Rectangle-path" width="3.077" height="1.5" transform="translate(3.077 3)" fill="#b6bac2"/>
+</g>
+</g>
+</svg></span><span class="item-text">Бытовая техника</span></a>
+                        <ul class="main-menu-submenu"><a class="main-menu__item__back" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8.439" height="13.413" viewBox="0 0 8.439 13.413">
+<path id="Path_3959" data-name="Path 3959" d="M-16478,15982l.008-.007,6-6,1,1-5.012,5,5.012,5.006-1,.994Z" transform="translate(16478.732 -15975.293)" fill="#9ca0a7" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+</svg><span class="text">Назад</span></a>
+                          <div class="main-menu-submenu__title">Бытовая техника</div>
+                          <div class="main-menu-submenu__banner"> 
+                            <p>Текст банера</p>
+                            <div class="item-image"><img src="assets/images/menu-banner.png" alt=""></div>
+                          </div>
+                          <div class="main-menu-submenu__menu"> 
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Мебель</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Кресла и стулья офисные</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для детей</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для кухонь, баров и кафе</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для офиса</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для персонала</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для руководителей</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебельные аксессуары</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Подарки, сувениры, награды</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Наградная и поздравительная продукция</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Подарочная упаковка</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Рамки для фотографий и дипломов</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Сувенирная продукция</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Презентация, коммуникация</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Аксессуары для досок и флипчартов</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Бейджи и держатели</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Демонстрационные системы</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Доски информационные, флипчарты</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Подставки рекламные, ценникодержатели</a></li>
+                              </ul>
+                            </li>
+                          </div>
+                          <ul class="main-menu-submenu__logos"> 
+                            <li class="main-menu-submenu__logos_item"> <a class="main-menu-submenu__logos_link" href="#"><img src="assets/images/logo-1.png" alt=""></a></li>
+                          </ul>
+                        </ul>
+                      </li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+<g id="Group_1795" data-name="Group 1795" transform="translate(-554 -238)">
+<rect id="Rectangle_499" data-name="Rectangle 499" width="19" height="19" transform="translate(554 238)" fill="none"/>
+<path id="Path_3961" data-name="Path 3961" d="M2.981,2.25a.731.731,0,0,0,0,1.462V14.348a2.317,2.317,0,0,0,.642,1.608,2.153,2.153,0,0,0,1.55.666h5.846v3.167H7.853a.731.731,0,1,0,0,1.462h7.795a.731.731,0,0,0,0-1.462H12.481V16.622h5.846a2.153,2.153,0,0,0,1.55-.666,2.317,2.317,0,0,0,.642-1.608V3.712a.731.731,0,1,0,0-1.462Zm1.462,12.1a.856.856,0,0,0,.233.593.692.692,0,0,0,.5.219H18.327a.692.692,0,0,0,.5-.219.856.856,0,0,0,.233-.593V3.712H4.442Z" transform="translate(551.75 235.75)" fill="#b6bac2" fill-rule="evenodd"/>
+</g>
+</svg></span><span class="item-text">Демооборудование</span></a>
+                        <ul class="main-menu-submenu"><a class="main-menu__item__back" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8.439" height="13.413" viewBox="0 0 8.439 13.413">
+<path id="Path_3959" data-name="Path 3959" d="M-16478,15982l.008-.007,6-6,1,1-5.012,5,5.012,5.006-1,.994Z" transform="translate(16478.732 -15975.293)" fill="#9ca0a7" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+</svg><span class="text">Назад</span></a>
+                          <div class="main-menu-submenu__title">Демооборудование</div>
+                          <div class="main-menu-submenu__banner"> 
+                            <p>Текст банера</p>
+                            <div class="item-image"><img src="assets/images/menu-banner.png" alt=""></div>
+                          </div>
+                          <div class="main-menu-submenu__menu"> 
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Мебель</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Кресла и стулья офисные</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для детей</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для кухонь, баров и кафе</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для офиса</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для персонала</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебель для руководителей</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Мебельные аксессуары</a></li>
+                              </ul>
+                            </li>
+                            <li class="main-menu-submenu__item"><a class="main-menu-submenu__link" href="#">Подарки, сувениры, награды</a>
+                              <ul class="main-menu-last"> 
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Наградная и поздравительная продукция</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Подарочная упаковка</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Рамки для фотографий и дипломов</a></li>
+                                <li class="main-menu-last__item"> <a class="main-menu-last__link" href="#">Сувенирная продукция</a></li>
+                              </ul>
+                            </li>
+                          </div>
+                          <ul class="main-menu-submenu__logos"> 
+                            <li class="main-menu-submenu__logos_item"> <a class="main-menu-submenu__logos_link" href="#"><img src="assets/images/logo-1.png" alt=""></a></li>
+                          </ul>
+                        </ul>
+                      </li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+<g id="Group_1795" data-name="Group 1795" transform="translate(-554 -238)">
+<rect id="Rectangle_499" data-name="Rectangle 499" width="19" height="19" transform="translate(554 238)" fill="none"/>
+<g id="Group" transform="translate(553.396 238)">
+<path id="Shape" d="M19.6,4.487A4.47,4.47,0,0,0,15.16,0a4.4,4.4,0,0,0-3.423,1.647,8.378,8.378,0,0,0-3.268,0A4.406,4.406,0,0,0,5.046,0a4.481,4.481,0,0,0-3.2,7.577A8.762,8.762,0,0,0,10.1,19,8.762,8.762,0,0,0,18.362,7.578,4.48,4.48,0,0,0,19.6,4.487Zm-17.653,0a3.116,3.116,0,0,1,3.1-3.127A3.031,3.031,0,0,1,7,2.076,8.741,8.741,0,0,0,2.441,6.149,3.1,3.1,0,0,1,1.95,4.487ZM10.1,17.64a7.4,7.4,0,1,1,7.325-7.4,7.369,7.369,0,0,1-7.325,7.4ZM17.763,6.15a8.741,8.741,0,0,0-4.556-4.073,3.031,3.031,0,0,1,1.952-.716,3.11,3.11,0,0,1,2.6,4.789Z" transform="translate(0)" fill="#b6bac2" fill-rule="evenodd"/>
+<ellipse id="Oval" cx="0.841" cy="0.832" rx="0.841" ry="0.832" transform="translate(6.193 6.146)" fill="#b6bac2"/>
+<ellipse id="Oval-2" data-name="Oval" cx="0.841" cy="0.832" rx="0.841" ry="0.832" transform="translate(12.33 6.146)" fill="#b6bac2"/>
+<ellipse id="Oval-3" data-name="Oval" cx="1.405" cy="1.389" rx="1.405" ry="1.389" transform="translate(8.698 9.338)" fill="#b6bac2"/>
+<path id="Shape-2" data-name="Shape" d="M14.134,14.526a.693.693,0,0,0-.923.3,2.356,2.356,0,0,1-2.277,1.318,2.215,2.215,0,0,1-2.25-1.259.69.69,0,0,0-.89-.389.677.677,0,0,0-.394.879,3.527,3.527,0,0,0,3.534,2.129,3.731,3.731,0,0,0,3.508-2.07.677.677,0,0,0-.308-.913Z" transform="translate(-0.831 -1.418)" fill="#b6bac2" fill-rule="evenodd"/>
+</g>
+</g>
+</svg></span><span class="item-text">Детям</span></a></li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+<g id="Group_1795" data-name="Group 1795" transform="translate(-554 -238)">
+<rect id="Rectangle_499" data-name="Rectangle 499" width="19" height="19" transform="translate(554 238)" fill="none"/>
+<path id="home111" d="M20.919,8.194a.751.751,0,0,1,.212,1.027.721.721,0,0,1-1.009.216l-.375-.249v9.688A2.207,2.207,0,0,1,17.553,21.1L5.887,21.062a2.208,2.208,0,0,1-2.179-2.227V9.218l-.331.22a.721.721,0,0,1-1.009-.216.751.751,0,0,1,.212-1.027L11.75,2.1ZM5.893,19.577a.736.736,0,0,1-.726-.742V8.25L11.75,3.877l6.54,4.343V18.877a.736.736,0,0,1-.732.742l-2.428-.009V11.9a1.472,1.472,0,0,0-1.458-1.485H9.784A1.472,1.472,0,0,0,8.325,11.9v7.686ZM13.672,11.9H9.784v7.691l3.888.014Z" transform="translate(551.75 235.896)" fill="#b6bac2" fill-rule="evenodd"/>
+</g>
+</svg></span><span class="item-text">Дом и сад</span></a></li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+<g id="Group_1795" data-name="Group 1795" transform="translate(-554 -238)">
+<rect id="Rectangle_499" data-name="Rectangle 499" width="19" height="19" transform="translate(554 238)" fill="none"/>
+<path id="Path_3962" data-name="Path 3962" d="M13515.862,16135.221v-4.752a.591.591,0,0,1,.586-.594h.586v-2.375a.589.589,0,0,1,.435-.572l8.358-2.258v-4.293H13527v4.748a.593.593,0,0,1-.436.574l-8.359,2.258v1.918h.588a.592.592,0,0,1,.587.594v4.752a1.758,1.758,0,1,1-3.517,0Zm1.172,0a.585.585,0,1,0,1.17,0v-4.156h-1.17Zm-6.448-11.283a.589.589,0,0,1-.587-.594v-4.75a.589.589,0,0,1,.587-.592h14.067a.587.587,0,0,1,.587.592v4.75a.588.588,0,0,1-.587.594Zm.586-1.186h12.9v-3.564h-12.9Z" transform="translate(-12954.999 -15880.002)" fill="#b6bac2"/>
+</g>
+</svg></span><span class="item-text">Инструменты и ремонт</span></a></li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19.001" viewBox="0 0 19 19.001">
+<g id="Group_1795" data-name="Group 1795" transform="translate(-554 -238)">
+<rect id="Rectangle_499" data-name="Rectangle 499" width="19" height="19" transform="translate(554 238)" fill="none"/>
+<path id="Path_3963" data-name="Path 3963" d="M11.929,19V0h5.785A1.276,1.276,0,0,1,19,1.267V17.734A1.276,1.276,0,0,1,17.714,19Zm1.286-1.267h4.5V16.467H16.429V15.2h1.285V13.3H15.143V12.034h2.571v-1.9H16.429V8.868h1.285v-1.9H15.143V5.7h2.571V3.8H16.429V2.535h1.285V1.267h-4.5ZM1.931,19A1.926,1.926,0,0,1,0,17.1L0,5.533,3.3.634a1.459,1.459,0,0,1,2.406,0L9,5.7,9,17.1A1.927,1.927,0,0,1,7.071,19ZM1.318,5.842,1.289,17.1a.643.643,0,0,0,.645.636H7.069a.644.644,0,0,0,.646-.636L7.68,5.837,6.73,4.4H2.271Zm3.051-4.5L3.1,3.2H5.906L4.635,1.337a.145.145,0,0,0-.266,0Z" transform="translate(554 238)" fill="#b6bac2"/>
+</g>
+</svg></span><span class="item-text">Канцтовары</span></a></li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+<g id="Group_1795" data-name="Group 1795" transform="translate(-554 -238)">
+<rect id="Rectangle_499" data-name="Rectangle 499" width="19" height="19" transform="translate(554 238)" fill="none"/>
+<path id="orig_1_" data-name="orig (1)" d="M18.086,8.77H19V7.616H15.123a5.5,5.5,0,0,1,0-3.462h.911V3H2.077A2.052,2.052,0,0,0,0,5.019V6.75A2.052,2.052,0,0,0,2.077,8.769H3.171a1.949,1.949,0,0,0-.209.866v1.731a1.949,1.949,0,0,0,.208.865H2.077A2.052,2.052,0,0,0,0,14.25v1.731A2.052,2.052,0,0,0,2.077,18H16.033V16.846h-.911a5.5,5.5,0,0,1,0-3.461H19V12.231h-.912a5.5,5.5,0,0,1,0-3.462ZM1.186,6.75V5.019a.879.879,0,0,1,.891-.865h11.81a6.616,6.616,0,0,0,0,3.462H2.077a.879.879,0,0,1-.891-.865Zm12.7,10.1H2.077a.879.879,0,0,1-.891-.865V14.25a.879.879,0,0,1,.891-.865c.022.018,10.516,0,11.81,0a6.613,6.613,0,0,0,0,3.461Zm2.148-4.615h-11a.879.879,0,0,1-.885-.865V9.635a.879.879,0,0,1,.891-.865H16.851a6.613,6.613,0,0,0,0,3.462Z" transform="translate(554.002 237)" fill="#b6bac2"/>
+</g>
+</svg></span><span class="item-text">Книги</span></a></li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+<g id="Group_1795" data-name="Group 1795" transform="translate(-554 -238)">
+<rect id="Rectangle_499" data-name="Rectangle 499" width="19" height="19" transform="translate(554 238)" fill="none"/>
+<path id="Size-24-2" d="M11.5,7.821a6.735,6.735,0,0,1,2.375,4.908,11.07,11.07,0,0,0-2.375,3.9,11.07,11.07,0,0,0-2.375-3.9A6.736,6.736,0,0,1,11.5,7.821Zm-.95,13.129C5.356,20.4,2.528,16.819,2.067,12.1Q2,11.414,2,10.694a12.022,12.022,0,0,1,1.425.088,12.43,12.43,0,0,1,4.3,1.305A8.58,8.58,0,0,1,11.5,6a8.512,8.512,0,0,1,3.789,6.3,12.954,12.954,0,0,1,4.286-1.494A9.388,9.388,0,0,1,21,10.694a13.985,13.985,0,0,1-.07,1.409c-.469,4.63-3.3,8.283-8.48,8.844a8.775,8.775,0,0,1-1.9,0Zm-2.016-6.5a8.357,8.357,0,0,0-5.022-2.231,8.758,8.758,0,0,0,2.048,4.9,7.665,7.665,0,0,0,4.924,2.413A8.6,8.6,0,0,0,8.534,14.446Zm5.8.343a9.488,9.488,0,0,1,5.141-2.533,8.811,8.811,0,0,1-2.043,4.811,7.681,7.681,0,0,1-4.927,2.455A7.557,7.557,0,0,1,14.338,14.789Z" transform="translate(552 234)" fill="#b6bac2" fill-rule="evenodd"/>
+</g>
+</svg></span><span class="item-text">Красота и здоровье </span></a></li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+<g id="Group_1795" data-name="Group 1795" transform="translate(-554 -238)">
+<rect id="Rectangle_499" data-name="Rectangle 499" width="19" height="19" transform="translate(554 238)" fill="none"/>
+<g id="Size-24-29" transform="translate(551.5 236.5)">
+<path id="Path_3964" data-name="Path 3964" d="M10,11.5a.75.75,0,0,1,.75-.75h2.5a.75.75,0,0,1,0,1.5h-2.5A.75.75,0,0,1,10,11.5Z" transform="translate(-0.5 -0.617)" fill="#b6bac2" fill-rule="evenodd"/>
+<path id="Path_3965" data-name="Path 3965" d="M10,16.5a.75.75,0,0,1,.75-.75h2.5a.75.75,0,0,1,0,1.5h-2.5A.75.75,0,0,1,10,16.5Z" transform="translate(-0.5 -0.95)" fill="#b6bac2" fill-rule="evenodd"/>
+<path id="Path_3966" data-name="Path 3966" d="M3.921,8.068A1.414,1.414,0,0,0,2.5,9.475v7.506a1.414,1.414,0,0,0,1.421,1.407H5.105V19.8a.711.711,0,0,0,1.421,0V18.389h9.947V19.8a.711.711,0,0,0,1.421,0V18.389h1.184A1.414,1.414,0,0,0,20.5,16.981V9.475a1.414,1.414,0,0,0-1.421-1.407H12.211V7.13h2.132a1.424,1.424,0,0,0,1.209-.667,1.4,1.4,0,0,0,.062-1.369L14.192,2.278A1.422,1.422,0,0,0,12.921,1.5H10.079a1.423,1.423,0,0,0-1.271.778L7.387,5.093a1.4,1.4,0,0,0,.062,1.369,1.424,1.424,0,0,0,1.209.667h2.132v.938Zm0,1.407H19.079v3.049H3.921Zm15.158,7.506H3.921V13.932H19.079ZM12.921,2.907H10.079L8.658,5.722h5.684Z" transform="translate(0)" fill="#b6bac2" fill-rule="evenodd"/>
+</g>
+</g>
+</svg></span><span class="item-text">Мебель</span></a></li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+<g id="Group_1795" data-name="Group 1795" transform="translate(-554 -238)">
+<rect id="Rectangle_499" data-name="Rectangle 499" width="19" height="19" transform="translate(554 238)" fill="none"/>
+<path id="Size-24" d="M9.394,4.583a.792.792,0,0,0-.792.792v5.663H16.4V5.375a.792.792,0,0,0-.792-.792Zm8.587,6.455V5.375A2.375,2.375,0,0,0,15.606,3H9.394A2.375,2.375,0,0,0,7.019,5.375v5.663H5.375A2.375,2.375,0,0,0,3,13.413v2.192a2.375,2.375,0,0,0,2.375,2.375H7.019v1.644A2.375,2.375,0,0,0,9.394,22h6.212a2.375,2.375,0,0,0,2.375-2.375V17.981h1.644A2.375,2.375,0,0,0,22,15.606V13.413a2.375,2.375,0,0,0-2.375-2.375Zm0,5.359h1.644a.792.792,0,0,0,.792-.792V13.413a.792.792,0,0,0-.792-.792H5.375a.792.792,0,0,0-.792.792v2.192a.792.792,0,0,0,.792.792H7.019v-.3a2.375,2.375,0,0,1,2.375-2.375h6.212a2.375,2.375,0,0,1,2.375,2.375ZM9.394,15.3a.792.792,0,0,0-.792.792v3.532a.792.792,0,0,0,.792.792h6.212a.792.792,0,0,0,.792-.792V16.093a.792.792,0,0,0-.792-.792Z" transform="translate(551 235)" fill="#b6bac2" fill-rule="evenodd"/>
+</g>
+</svg></span><span class="item-text">Офисная техника</span></a></li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+<g id="Group_1795" data-name="Group 1795" transform="translate(-554 -238)">
+<rect id="Rectangle_499" data-name="Rectangle 499" width="19" height="19" transform="translate(554 238)" fill="none"/>
+<path id="Glassware" d="M4.157,4.775A2.236,2.236,0,0,1,6.366,3h4.467a2.248,2.248,0,0,1,1.862.974H19.75A2.218,2.218,0,0,1,22,6.283l-.741,13.641A2.225,2.225,0,0,1,19.009,22H13.071a2.265,2.265,0,0,1-1.871-.974H5.748a.731.731,0,1,1,0-1.462H8V16.085a5.511,5.511,0,0,1-5-5.258,1.951,1.951,0,0,1,.039-.439Zm7.424,1.43a.739.739,0,0,1,.749-.769h7.42a.739.739,0,0,1,.749.769l-.62,11.41H12.2Zm.741,13.641a.742.742,0,0,0,.749.692h5.938a.742.742,0,0,0,.749-.692l.042-.769H12.28ZM9.5,16.044a5.671,5.671,0,0,0,1.1-.29l.207,3.809H9.5ZM6.366,4.462a.745.745,0,0,0-.736.592L4.512,10.667a.532.532,0,0,0-.012.118,4.046,4.046,0,0,0,4.092,3.869,4.159,4.159,0,0,0,1.92-.465l-.43-7.907a2.164,2.164,0,0,1,.827-1.817l-2.3,0Z" transform="translate(551 235)" fill="#b6bac2" fill-rule="evenodd"/>
+</g>
+</svg></span><span class="item-text">Посуда</span></a></li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+<g id="Group_1795" data-name="Group 1795" transform="translate(-554 -238)">
+<rect id="Rectangle_499" data-name="Rectangle 499" width="19" height="19" transform="translate(554 238)" fill="none"/>
+<path id="producty" d="M16.748,5.847a4.409,4.409,0,0,1,2.106,1.011c1.3.984,2.146,2.488,2.146,5.4a8.853,8.853,0,0,1-2.394,6.665,7.851,7.851,0,0,1-2.751,1.9,3.034,3.034,0,0,1-1.856.06c-.688-.143-1.216-.785-2.5-.785s-1.825.642-2.489.785a3.073,3.073,0,0,1-1.866-.06,7.9,7.9,0,0,1-2.721-1.968A8.757,8.757,0,0,1,2,12.257c0-2.883.8-4.415,1.984-5.4a3.516,3.516,0,0,1,3.3-.984c1.366.21,2.936,1.76,4.224,1.76h0c.3-3.053,1.821-4.866,3.794-5.437A5.112,5.112,0,0,1,16.725,2C16.725,3.282,16.747,4.565,16.748,5.847ZM13.041,6.981a4.946,4.946,0,0,1,1.229-2.559A3.255,3.255,0,0,1,15.3,3.709c0,.718.024,1.436.023,2.154A4.982,4.982,0,0,0,13.041,6.981Zm2.274,12.526a2.181,2.181,0,0,1-1.734-.357,4.7,4.7,0,0,0-2.081-.475,5.5,5.5,0,0,0-2.551.708,1.543,1.543,0,0,1-1.264.124,6.529,6.529,0,0,1-2.261-1.664,7.347,7.347,0,0,1-2-5.586c0-2.584.7-3.661,1.471-4.3a2.417,2.417,0,0,1,2.168-.671C8.082,7.439,8.992,8.3,9.936,8.7a4.041,4.041,0,0,0,1.569.359A4.276,4.276,0,0,0,14,8.045a3.194,3.194,0,0,1,1.39-.756A3.576,3.576,0,0,1,19.107,9.4a7.173,7.173,0,0,1,.468,2.856c0,2.64-.706,4.406-1.969,5.65A6.452,6.452,0,0,1,15.315,19.507Zm-8.8-7.057a.712.712,0,1,0-1.425,0,5.322,5.322,0,0,0,2.246,4.411.712.712,0,1,0,.733-1.222A3.912,3.912,0,0,1,6.512,12.45Z" transform="translate(552 236)" fill="#b6bac2" fill-rule="evenodd"/>
+</g>
+</svg></span><span class="item-text">Продукты питания</span></a></li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="12" viewBox="0 0 19 12">
+<path id="Path_3967" data-name="Path 3967" d="M13522,15844.565a3.914,3.914,0,0,1,1.808-3.282l-.491-1.047h-1.778l-.638,3.827a.823.823,0,0,1,.172.5.861.861,0,1,1-1.361-.687l.609-3.643h-1.751l-.943,1.367a3.881,3.881,0,0,1,1.384,2.962,4,4,0,1,1-4-3.928,4.04,4.04,0,0,1,1.6.332l1.141-1.654a.608.608,0,0,1,.5-.255h4.514l-.359-.77a.048.048,0,0,1,0-.022c-.006-.011-.016-.024-.021-.036a.586.586,0,0,1,.34-.764l2.452-.934a.6.6,0,0,1,.777.336.585.585,0,0,1-.344.764l-1.853.706.4.857a.629.629,0,0,1,.165.2l.638,1.377a3.918,3.918,0,1,1-2.958,3.786Zm1.2,0a2.8,2.8,0,1,0,2.8-2.747,2.733,2.733,0,0,0-.532.054l1.062,2.278a.583.583,0,0,1-.3.779.622.622,0,0,1-.248.055.607.607,0,0,1-.549-.344l-.647-1.392a.631.631,0,0,1-.155-.2l-.313-.668A2.72,2.72,0,0,0,13523.2,15844.565Zm-11,0a2.8,2.8,0,0,0,5.563.391h-2.786a.6.6,0,0,1-.529-.313.585.585,0,0,1,.032-.609l1.425-2.056a2.777,2.777,0,0,0-3.7,2.588Zm3.912-.788h1.559a2.719,2.719,0,0,0-.733-1.188Zm.292-5.9v-1.179h3.007v1.179Z" transform="translate(-13511.001 -15836.494)" fill="#b6bac2"/>
+</svg></span><span class="item-text">Спорт и отдых</span></a></li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19.276" viewBox="0 0 19 19.276">
+<g id="Group_1795" data-name="Group 1795" transform="translate(0 0.276)">
+<rect id="Rectangle_499" data-name="Rectangle 499" width="19" height="19" fill="none"/>
+<path id="svg_4_" data-name="svg (4)" d="M11.281,1.188V7.719h6.531v3.563H11.281v6.531H7.719V11.281H1.188V7.719H7.719V1.188h3.563M12.469,0H6.531V6.531H0v5.938H6.531V19h5.938V12.469H19V6.531H12.469V0Z" transform="translate(0 -0.276)" fill="#b6bac2"/>
+</g>
+</svg></span><span class="item-text">Товары для медицины</span></a></li>
+                      <li class="main-menu__item main-menu__item_dropdown"><a class="main-menu__link" href="#"> <span class="item-icon">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+<g id="_-" data-name="-" transform="translate(-1.5 -1.5)">
+<path id="Path_3968" data-name="Path 3968" d="M10.948,20.495a2.533,2.533,0,0,0,1.877-4.39,1.356,1.356,0,0,0-.264-.19.452.452,0,0,1,.226-.847h2.284a5.7,5.7,0,0,0,3.78-1.4A4.783,4.783,0,0,0,20.5,10.093a8.209,8.209,0,0,0-2.841-6.131A10.045,10.045,0,0,0,11,1.5a9.5,9.5,0,0,0-.052,18.995Zm-1.3-1.47A8.14,8.14,0,0,1,11,2.857a8.689,8.689,0,0,1,5.758,2.119,6.853,6.853,0,0,1,2.385,5.117,3.427,3.427,0,0,1-1.192,2.558,4.344,4.344,0,0,1-2.879,1.06H12.81a1.809,1.809,0,0,0-.9,3.392,1.176,1.176,0,0,1,.277,1.342l-.007.014A1.176,1.176,0,0,1,11,19.138,8.142,8.142,0,0,1,9.648,19.025Z" transform="translate(0 0)" fill="#b6bac2" fill-rule="evenodd"/>
+<path id="Path_3969" data-name="Path 3969" d="M6.5,9.5a1,1,0,1,0,1,1A1,1,0,0,0,6.5,9.5Zm2,1a2,2,0,1,1-2-2A2,2,0,0,1,8.5,10.5Z" transform="translate(0 -0.824)" fill="#b6bac2" fill-rule="evenodd"/>
+<path id="Path_3970" data-name="Path 3970" d="M11.5,5.5a1,1,0,1,0,1,1A1,1,0,0,0,11.5,5.5Zm2,1a2,2,0,1,1-2-2A2,2,0,0,1,13.5,6.5Z" transform="translate(-0.941)" fill="#b6bac2" fill-rule="evenodd"/>
+<path id="Path_3971" data-name="Path 3971" d="M17.5,8.5a1,1,0,1,0,1,1A1,1,0,0,0,17.5,8.5Zm2,1a2,2,0,1,1-2-2A2,2,0,0,1,19.5,9.5Z" transform="translate(-2 -0.706)" fill="#b6bac2" fill-rule="evenodd"/>
+</g>
+</svg></span><span class="item-text">Хобби и творчество</span></a></li>
+                    </ul>
+                    <ul class="menu-mobile"> 
+                      <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">О компании</a></li>
+                      <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Конкурсы</a></li>
+                      <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Покупателям</a></li>
+                      <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Бренды</a></li>
+                      <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                  <form class="header-search">
+                    <input class="form-control" type="text" placeholder="Поиск по названию или артикулу товара">
+                    <button class="button" type="submit">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16">
+                        <path id="Path_3918" data-name="Path 3918" d="M18.422,15.459l-2.87-2.9a6.922,6.922,0,0,0,1.735-4.578,6.794,6.794,0,1,0-6.794,6.876,6.714,6.714,0,0,0,3.6-1.05l2.983,3.019a.932.932,0,0,0,1.33,0A.955.955,0,0,0,18.422,15.459ZM5.6,7.976a4.889,4.889,0,1,1,4.9,4.956A4.933,4.933,0,0,1,5.6,7.976Z" transform="translate(-3.7 -1.1)"></path>
+                      </svg>
+                    </button>
+                  </form>
+                  <ul class="header-buttons"> 
+                    <li class="header-buttons__item"> <a class="header-buttons__link" href="#"><span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16">
+                            <path id="Path_3919" data-name="Path 3919" d="M39.585,27.872H23.215a.817.817,0,0,1,.163-.52l1.4-1.691a.7.7,0,0,1,.554-.26h12.1a.8.8,0,0,1,.554.26l1.4,1.691A.7.7,0,0,1,39.585,27.872Zm.815,1.366V40.685a.723.723,0,0,1-.717.715H23.117a.723.723,0,0,1-.717-.715V29.237a.723.723,0,0,1,.717-.715H39.683A.723.723,0,0,1,40.4,29.237Zm-5.12,2.211a.806.806,0,0,0-.815-.813h-6.13a.813.813,0,1,0,0,1.626h6.13A.806.806,0,0,0,35.28,31.449Z" transform="translate(-22.4 -25.4)" fill="#b6bac2"></path>
+                          </svg></span><span class="text">Заказы</span></a></li>
+                    <li class="header-buttons__item"> <a class="header-buttons__link" href="#"><span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16">
+                            <path id="heart" d="M0,47.588v-.212a5.247,5.247,0,0,1,4.431-5.152,5.385,5.385,0,0,1,4.624,1.459l.445.438.412-.438a5.452,5.452,0,0,1,4.657-1.459A5.246,5.246,0,0,1,19,47.376v.212a5.428,5.428,0,0,1-1.766,4l-6.706,6.165a1.526,1.526,0,0,1-2.056,0L1.766,51.589a5.433,5.433,0,0,1-1.766-4Z" transform="translate(0 -42.152)" fill="#b6bac2">  </path>
+                          </svg><span class="count">256                               </span></span><span class="text">Избранное</span></a></li>
+                    <li class="header-buttons__item"> <a class="header-buttons__link" href="#"><span class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16">
+                            <path id="Path_3920" data-name="Path 3920" d="M-16465.854,15990.08a1.935,1.935,0,0,1,1.951-1.92,1.935,1.935,0,0,1,1.951,1.92,1.936,1.936,0,0,1-1.951,1.921A1.936,1.936,0,0,1-16465.854,15990.08Zm-7.375,0a1.937,1.937,0,0,1,1.953-1.92,1.935,1.935,0,0,1,1.951,1.92,1.936,1.936,0,0,1-1.951,1.921A1.938,1.938,0,0,1-16473.229,15990.08Zm2.16-3.413c-1.334-.015-2.068-1.22-2.371-2.377s-1.359-6.152-1.359-6.152a1.091,1.091,0,0,0-1.074-.868h-1.48a.626.626,0,0,1-.463-.179.6.6,0,0,1-.182-.455.639.639,0,0,1,.645-.635h1.48a2.356,2.356,0,0,1,2.344,1.926l.193,1.058H-16460l-1.332,5.566a2.764,2.764,0,0,1-2.707,2.116s-2.531.007-4.613.007C-16469.691,15986.674-16470.621,15986.672-16471.068,15986.667Z" transform="translate(16477.998 -15976.001)" fill="#b6bac2"></path>
+                          </svg><span class="count">8</span></span><span class="text">Корзина</span></a></li>
+                  </ul><a class="button button-gray" href="#">Войти </a>
+                </div>
+                <div class="header-content__menu"><a class="header-content__menu_button" href="#">Каталог услуг</a>
+                  <ul class="header-nenu"> 
+                    <li class="header-nenu__item"> <a class="header-nenu__link" href="#"><span class="text">8 марта</span></a></li>
+                    <li class="header-nenu__item"> <a class="header-nenu__link" href="#"> <img src="assets/images/stock.svg" alt=""><span class="text">Акции</span></a></li>
+                    <li class="header-nenu__item"> <a class="header-nenu__link" href="#"> <img src="assets/images/new-items.svg" alt=""><span class="text">Новинки </span></a></li>
+                    <li class="header-nenu__item"> <a class="header-nenu__link" href="#"> <img src="assets/images/hits.svg" alt=""><span class="text">Хиты продаж</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main-section main-section-inside">
+        <div class="container">
+          <div class="inside-page">
+            <div class="basket-empty__page">
+              <h1>Корзина</h1>
+              <div class="basket-empty"> <img src="assets/images/basket.png" alt="">
+                <h2>Ваша корзина пуста</h2>
+                <p>Воспользуйтесь поиском или каталогом, чтобы найти всё, что нужно.</p>
+                <p>Если в Корзине были товары, войдите, чтобы посмотреть список.</p><a class="button button-violet" href="#">Перейти в каталог</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer"> 
+        <div class="container">
+          <div class="footer-block"> 
+            <div class="footer-menu"> 
+              <div class="footer-menu__block">
+                <p class="title">Каталог </p>
+                <ul class="footer-list"> 
+                  <li> <a href="#">Акции</a></li>
+                  <li> <a href="#">Подарки на 8 марта</a></li>
+                  <li> <a href="#">Подбор картриджей</a></li>
+                  <li> <a href="#">Новинки</a></li>
+                  <li> <a href="#">Хиты продаж</a></li>
+                  <li> <a href="#">Каталог услуг</a></li>
+                </ul>
+              </div>
+              <div class="footer-menu__block">
+                <p class="title">Полезное </p>
+                <ul class="footer-list"> 
+                  <li> <a href="#">О компании</a></li>
+                  <li> <a href="#">Конкурсы</a></li>
+                  <li> <a href="#">Бренды</a></li>
+                  <li> <a href="#">Контакты</a></li>
+                  <li> <a href="#">Политика конфиденциальности</a></li>
+                </ul>
+              </div>
+              <div class="footer-menu__block">
+                <p class="title">Покупателям </p>
+                <ul class="footer-list"> 
+                  <li> <a href="#">Полезная информация</a></li>
+                  <li> <a href="#">Доставка</a></li>
+                  <li> <a href="#">Оплата</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-contacts"> 
+              <p class="title">Контакты</p>
+              <p>г. Владимир ул. Строителей д. 2а</p>
+              <p>Время работы с 9.00 до 18.00</p>
+              <ul class="footer-contacts__list"> 
+                <li> <a href="tel:89157933540">+7-915-793-35-40  </a></li>
+                <li> <a href="tel:89961942176">+7-996-194-21-76</a></li>
+              </ul>
+              <p> <a class="link" href="mailto:kanzcompanion@yandex.ru">kanzcompanion@yandex.ru</a></p>
+            </div>
+          </div>
+          <div class="footer-copy"> 
+            <p>© 2009-2024, ИП Мещерякова Ольга Александровна</p>
+            <p class="dev">Разработка сайта<a href="https://logicloud.ru/" target="_blanc">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="103" height="19" viewBox="0 0 103 19">
+<path id="logicloud_logo" d="M-5597.743-49.466a4.593,4.593,0,0,1-1.7-1.337.744.744,0,0,1-.182-.459.714.714,0,0,1,.344-.591.841.841,0,0,1,.458-.146.808.808,0,0,1,.671.345,2.882,2.882,0,0,0,1.113.877,3.657,3.657,0,0,0,1.522.3,2.818,2.818,0,0,0,1.458-.385,2.77,2.77,0,0,0,1.048-1.133,3.78,3.78,0,0,0,.393-1.781v-.8a3.793,3.793,0,0,1-1.343,1.411,3.547,3.547,0,0,1-1.883.509,4.091,4.091,0,0,1-2.169-.582,3.981,3.981,0,0,1-1.49-1.616,5.05,5.05,0,0,1-.532-2.346,4.785,4.785,0,0,1,.574-2.363,4.109,4.109,0,0,1,1.6-1.616,4.677,4.677,0,0,1,2.341-.582,4.6,4.6,0,0,1,2.317.582,4.268,4.268,0,0,1,.593.405l-.011-.971h1.6V-57.4q0,.1,0,.194v3.544a4.916,4.916,0,0,1-.573,2.363,4.261,4.261,0,0,1-1.613,1.681,4.521,4.521,0,0,1-2.352.616,5.181,5.181,0,0,1-2.191-.468Zm.729-10.427a2.765,2.765,0,0,0-1.041,1.1,3.334,3.334,0,0,0-.376,1.592,3.284,3.284,0,0,0,.377,1.583,2.775,2.775,0,0,0,1.04,1.091,2.874,2.874,0,0,0,1.5.394,2.877,2.877,0,0,0,1.5-.394,2.726,2.726,0,0,0,1.032-1.091,3.345,3.345,0,0,0,.368-1.583,3.4,3.4,0,0,0-.368-1.592,2.709,2.709,0,0,0-1.032-1.1,2.878,2.878,0,0,0-1.5-.394,2.874,2.874,0,0,0-1.5.394Zm-39.733,9.616a4.226,4.226,0,0,1-1.657-.335,4.244,4.244,0,0,1-1.353-.913,4.249,4.249,0,0,1-.912-1.356,4.253,4.253,0,0,1-.334-1.661v-9.19a4.251,4.251,0,0,1,.334-1.66,4.249,4.249,0,0,1,.912-1.356,4.243,4.243,0,0,1,1.353-.913,4.226,4.226,0,0,1,1.657-.335h9.169a4.224,4.224,0,0,1,1.657.335,4.243,4.243,0,0,1,1.353.914,4.249,4.249,0,0,1,.912,1.356,4.233,4.233,0,0,1,.334,1.66v9.188a4.244,4.244,0,0,1-.334,1.661,4.258,4.258,0,0,1-.912,1.356,4.252,4.252,0,0,1-1.353.914,4.22,4.22,0,0,1-1.657.335Zm1.311-8.433a3.805,3.805,0,0,0,.311,1.567,2.516,2.516,0,0,0,.875,1.083,2.207,2.207,0,0,0,1.269.385h.033a1.322,1.322,0,0,0,.8-.229.705.705,0,0,0,.311-.591.859.859,0,0,0-.2-.591.683.683,0,0,0-.532-.23h-.408a.678.678,0,0,1-.59-.394,1.987,1.987,0,0,1-.229-1v-3.873h-1.637Zm4.42-2.806a1.066,1.066,0,0,0,1.064,1.067,1.067,1.067,0,0,0,1.064-1.067,1.067,1.067,0,0,0-1.064-1.067,1.067,1.067,0,0,0-1.063,1.065Zm75.087,8.384a3.461,3.461,0,0,1-1.408-1.436,4.733,4.733,0,0,1-.508-2.272v-4.874h1.67v4.873a2.654,2.654,0,0,0,.712,2.01,2.623,2.623,0,0,0,1.891.681,2.787,2.787,0,0,0,1.252-.279,2.22,2.22,0,0,0,.884-.755,1.872,1.872,0,0,0,.319-1.067v-5.464h1.67v8.154a.83.83,0,0,1-.229.6.8.8,0,0,1-.606.238.808.808,0,0,1-.6-.238.816.816,0,0,1-.237-.6v-.181a3.635,3.635,0,0,1-1.245.812,4.115,4.115,0,0,1-1.539.287,4.162,4.162,0,0,1-2.03-.493Zm11.125-.123a4.308,4.308,0,0,1-1.628-1.641,4.625,4.625,0,0,1-.59-2.322,4.912,4.912,0,0,1,.547-2.322,4.144,4.144,0,0,1,1.506-1.633,3.99,3.99,0,0,1,2.137-.591,4.027,4.027,0,0,1,1.769.394,4.017,4.017,0,0,1,1.392,1.1v-5.269h1.67V-53.56a.836.836,0,0,1-.835.837.836.836,0,0,1-.835-.837l0-.077a4.582,4.582,0,0,1-.553.38,4.441,4.441,0,0,1-2.284.6,4.523,4.523,0,0,1-2.3-.6Zm.819-6.628a2.9,2.9,0,0,0-1.048,1.1,3.184,3.184,0,0,0-.385,1.567,3.227,3.227,0,0,0,.385,1.575,2.878,2.878,0,0,0,1.048,1.107,2.8,2.8,0,0,0,1.482.4,2.806,2.806,0,0,0,1.481-.4,2.819,2.819,0,0,0,1.04-1.107,3.293,3.293,0,0,0,.377-1.575,3.249,3.249,0,0,0-.377-1.567,2.834,2.834,0,0,0-1.04-1.1,2.8,2.8,0,0,0-1.481-.4,2.8,2.8,0,0,0-1.48.4Zm-23.094,6.645a4.11,4.11,0,0,1-1.6-1.616,4.76,4.76,0,0,1-.573-2.346,4.79,4.79,0,0,1,.573-2.363,4.11,4.11,0,0,1,1.6-1.616,4.679,4.679,0,0,1,2.341-.582,4.6,4.6,0,0,1,2.317.582,4.185,4.185,0,0,1,1.6,1.616,4.739,4.739,0,0,1,.581,2.363,4.765,4.765,0,0,1-.573,2.346,4.13,4.13,0,0,1-1.6,1.616,4.631,4.631,0,0,1-2.333.582,4.676,4.676,0,0,1-2.341-.584Zm.843-6.653a2.759,2.759,0,0,0-1.039,1.1,3.324,3.324,0,0,0-.377,1.592,3.267,3.267,0,0,0,.377,1.583,2.776,2.776,0,0,0,1.039,1.091,2.877,2.877,0,0,0,1.5.394,2.874,2.874,0,0,0,1.5-.394,2.718,2.718,0,0,0,1.032-1.091,3.34,3.34,0,0,0,.369-1.583,3.386,3.386,0,0,0-.369-1.592,2.705,2.705,0,0,0-1.032-1.1,2.876,2.876,0,0,0-1.5-.394,2.876,2.876,0,0,0-1.5.393Zm-15.562,6.645a4.211,4.211,0,0,1-1.613-1.633,4.685,4.685,0,0,1-.581-2.322,4.862,4.862,0,0,1,.564-2.355,4.078,4.078,0,0,1,1.58-1.625,4.525,4.525,0,0,1,2.292-.582,4.065,4.065,0,0,1,3.208,1.477.616.616,0,0,1,.164.427.719.719,0,0,1-.36.607.641.641,0,0,1-.377.115.823.823,0,0,1-.638-.3,2.6,2.6,0,0,0-.892-.648,2.8,2.8,0,0,0-1.1-.2,2.667,2.667,0,0,0-2.047.845,3.161,3.161,0,0,0-.786,2.24,3.339,3.339,0,0,0,.369,1.583,2.722,2.722,0,0,0,1.032,1.091,2.906,2.906,0,0,0,1.514.394,2.716,2.716,0,0,0,1.8-.574,1.027,1.027,0,0,1,.606-.23.7.7,0,0,1,.426.146.765.765,0,0,1,.311.591.611.611,0,0,1-.2.443,4.156,4.156,0,0,1-2.948,1.1,4.594,4.594,0,0,1-2.325-.589Zm-27.2.008a4.112,4.112,0,0,1-1.6-1.616,4.754,4.754,0,0,1-.573-2.346,4.8,4.8,0,0,1,.573-2.363,4.114,4.114,0,0,1,1.6-1.616,4.679,4.679,0,0,1,2.341-.582,4.6,4.6,0,0,1,2.317.582,4.184,4.184,0,0,1,1.6,1.616,4.734,4.734,0,0,1,.582,2.363,4.765,4.765,0,0,1-.573,2.346,4.128,4.128,0,0,1-1.6,1.616,4.632,4.632,0,0,1-2.334.582,4.677,4.677,0,0,1-2.338-.584Zm.843-6.653a2.764,2.764,0,0,0-1.04,1.1,3.329,3.329,0,0,0-.376,1.592,3.278,3.278,0,0,0,.376,1.583,2.774,2.774,0,0,0,1.04,1.091,2.874,2.874,0,0,0,1.5.394,2.878,2.878,0,0,0,1.5-.394,2.722,2.722,0,0,0,1.031-1.091,3.345,3.345,0,0,0,.368-1.583,3.386,3.386,0,0,0-.368-1.592,2.71,2.71,0,0,0-1.032-1.1,2.88,2.88,0,0,0-1.5-.394,2.875,2.875,0,0,0-1.5.393Zm36.569,7.17a2.2,2.2,0,0,1-1.269-.385,2.505,2.505,0,0,1-.875-1.083,3.8,3.8,0,0,1-.311-1.567v-9.78h1.637v9.78a1.966,1.966,0,0,0,.229,1,.674.674,0,0,0,.589.394h.409a.679.679,0,0,1,.532.23.851.851,0,0,1,.205.591.7.7,0,0,1-.312.59,1.315,1.315,0,0,1-.8.23Zm-16.463-.238a.812.812,0,0,1-.237-.6V-61.7h1.67v8.138a.831.831,0,0,1-.229.6.8.8,0,0,1-.605.238.81.81,0,0,1-.6-.238Zm-24.96.238a2.2,2.2,0,0,1-1.27-.385,2.509,2.509,0,0,1-.875-1.083,3.8,3.8,0,0,1-.312-1.567v-9.78h1.637v9.78a1.966,1.966,0,0,0,.229,1,.674.674,0,0,0,.59.394h.409a.68.68,0,0,1,.532.23.856.856,0,0,1,.2.591.7.7,0,0,1-.312.591,1.314,1.314,0,0,1-.8.23Zm24.8-10.755a1.043,1.043,0,0,1-.319-.763,1.043,1.043,0,0,1,.319-.763,1.038,1.038,0,0,1,.762-.32,1.037,1.037,0,0,1,.76.32,1.042,1.042,0,0,1,.32.763,1.042,1.042,0,0,1-.32.763,1.038,1.038,0,0,1-.761.32,1.038,1.038,0,0,1-.761-.321Z" transform="translate(5641.002 67.998)" fill="#9ca0a7"/>
+</svg></a></p>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade" id="cityModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Выберите ваш регион</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+               <form class="modal-search">
+<input class="form-control" type="text" placeholder="Поиск по названию региона">
+<button class="button" type="submit">
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16">
+<path id="Path_3918" data-name="Path 3918" d="M18.422,15.459l-2.87-2.9a6.922,6.922,0,0,0,1.735-4.578,6.794,6.794,0,1,0-6.794,6.876,6.714,6.714,0,0,0,3.6-1.05l2.983,3.019a.932.932,0,0,0,1.33,0A.955.955,0,0,0,18.422,15.459ZM5.6,7.976a4.889,4.889,0,1,1,4.9,4.956A4.933,4.933,0,0,1,5.6,7.976Z" transform="translate(-3.7 -1.1)"></path>
+</svg>
+</button>
+</form>
+              <ul class="city-list"> 
+                <li class="city-list__item"> <a class="city-list__link" href="#">Белгородская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Брянская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Владимирская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Воронежская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Ивановская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Калужская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Костромская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Курская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Липецкая область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Московская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Орловская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Рязанская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Смоленская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Тамбовская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link selected" href="#">Тверская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Тульская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Ярославская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Белгородская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Брянская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Владимирская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Воронежская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Ивановская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Калужская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Костромская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Курская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Липецкая область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Московская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Орловская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Рязанская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Смоленская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Тамбовская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Тверская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Тульская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Ярославская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Белгородская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Брянская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Владимирская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Воронежская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Ивановская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Калужская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Костромская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Курская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Липецкая область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Московская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Орловская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Рязанская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Смоленская область</a></li>
+                <li class="city-list__item"> <a class="city-list__link" href="#">Тамбовская область</a></li>
+                <li class="city-list__item"> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Заказать услугу</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body"> 
+              <form class="order-modal">
+                <p class="title">Цветное копирование</p>
+                <div class="form-group"> 
+                  <label>Имя*</label>
+                  <input class="form-control" type="text" placeholder="Укажите свое имя">
+                </div>
+                <div class="form-group"> 
+                  <label>Город*</label>
+                  <select> 
+                    <option class="hidd" value="">Выберите город из списка</option>
+                    <option value="">Москва</option>
+                    <option value="">Тверь</option>
+                    <option value="">Анапа</option>
+                    <option value="">Торжок</option>
+                  </select>
+                </div>
+                <div class="form-group"> 
+                  <label>Email*</label>
+                  <input class="form-control" type="text" placeholder="Введите email">
+                </div>
+                <div class="form-group"> 
+                  <label>Телефон*</label>
+                  <input class="form-control phone" type="text" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
+                </div>
+                <button class="button button-violet" type="submit">Заказать услугу</button>
+                <p class="note">Нажимая кнопку «Заказать услугу», Вы принимаете <a href="#">условия пользовательского соглашения</a> и  <a href="#">политики конфиденциальности</a>.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="authoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body"> 
+              <form class="order-modal">
+                <div class="form-group"> 
+                  <label>Email*</label>
+                  <input class="form-control" type="text" placeholder="Введите email">
+                </div>
+                <div class="form-group"> 
+                  <label>Пароль*</label>
+                  <input class="form-control" type="password" placeholder="Введите пароль"><a class="link" href="#">Не помню пароль</a>
+                </div>
+                <button class="button button-violet" type="submit">Войти</button>
+                <p class="note-block"> <a href="#">Регистрация</a></p>
+                <p class="note">Нажимая кнопку «Заказать услугу», Вы принимаете <a href="#">условия пользовательского соглашения</a> и  <a href="#">политики конфиденциальности</a>.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="authoErrorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <form class="order-modal">
+                <div class="form-group form-group__error"> 
+                  <label>Email*</label>
+                  <input class="form-control" type="text" placeholder="Введите email" value="konstantin@mail.ru">
+                </div>
+                <div class="form-group form-group__error"> 
+                  <label>Пароль*</label>
+                  <input class="form-control" type="password" placeholder="Введите пароль" value="123456">
+                  <p class="error-message">Email или пароль введены неправильно</p><a class="link" href="#">Не помню пароль</a>
+                </div>
+                <button class="button button-violet" type="submit">Войти</button>
+                <p class="note-block"> <a href="#">Регистрация</a></p>
+                <p class="note">Нажимая кнопку «Заказать услугу», Вы принимаете <a href="#">условия пользовательского соглашения</a> и  <a href="#">политики конфиденциальности</a>.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="passModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header"><a class="link-back" href="#">Вернуться назад</a>
+              <h5 class="modal-title" id="exampleModalLabel">Восстановление пароля</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body"> 
+              <form class="order-modal">
+                <p class="info">Введите email, который вы указывали при регистрации. На этот адрес мы пришлем письмо с новым паролем</p>
+                <div class="form-group">
+                  <label>Email*</label>
+                  <input class="form-control" type="text" placeholder="Введите email" value="konstantin@mail.ru">
+                </div>
+                <button class="button button-violet" type="submit">Отправить новый пароль</button>
+                <p class="note">Нажимая кнопку «Заказать услугу», Вы принимаете <a href="#">условия пользовательского соглашения</a> и  <a href="#">политики конфиденциальности</a>.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="passErrorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header"><a class="link-back" href="#">Вернуться назад</a>
+              <h5 class="modal-title" id="exampleModalLabel">Восстановление пароля</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body"> 
+              <form class="order-modal">
+                <p class="info">Введите email, который вы указывали при регистрации. На этот адрес мы пришлем письмо с новым паролем</p>
+                <div class="form-group form-group__error"> 
+                  <label>Email*</label>
+                  <input class="form-control" type="text" placeholder="Введите email" value="konstantin@mail.ru">
+                  <p class="error-message">Пользователь с таким email не найден. Проверьте правильность ввода данных.</p>
+                </div>
+                <button class="button button-violet" type="submit">Отправить новый пароль</button>
+                <p class="note">Нажимая кнопку «Заказать услугу», Вы принимаете <a href="#">условия пользовательского соглашения</a> и  <a href="#">политики конфиденциальности</a>.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="passSuccessModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body"> 
+              <div class="success-modal"> <img src="assets/images/lock.png" alt="">
+                <h5 class="modal-title">Проверьте свою почту</h5>
+                <p>Мы отправили вам новый пароль на указанный электронный адрес. Теперь вы можете войти с новым паролем.</p>
+                <button class="button button-violet" type="button">Войти с новым паролем</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="clearBasket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-small modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Очистить корзину?</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body"> 
+              <div class="modal-body__basket">    
+                <p>Вы точно хотите удалить все товары в корзине?</p>
+                <button class="button button-violet" type="button">Удалить товары</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="unitModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Добавить подразделение</h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body"> 
+              <form class="order-modal">
+                <div class="form-group">
+                  <label>Название подразделения*</label>
+                  <input class="form-control" type="text" placeholder="Укажите название">
+                </div>
+                <div class="form-group">
+                  <label>Покупатель*</label>
+                  <input class="form-control" type="text" placeholder="Укажите имя покупателя">
+                </div>
+                <div class="form-group">
+                  <label>Телефон*</label>
+                  <input class="form-control phonecompressed" type="text" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
+                </div>
+                <div class="form-group">
+                  <label>Email*</label>
+                  <input class="form-control" type="text" placeholder="Укажите email" value="konstantin@mail.ru">
+                </div>
+                <div class="form-group">
+                  <label>Город*</label>
+                  <select>
+                    <option>Петропавловск-Камчатский</option>
+                    <option>Москва</option>
+                    <option>Тверь</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Адрес доставки*</label>
+                  <input class="form-control" type="text" placeholder="Введите адрес доставки">
+                </div>
+                <div class="form-group__buttons">
+                  <button class="button button-violet" type="submit">Добавить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.maskedinput.js"></script>
+    <script src="assets/js/jquery.formstyler.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/perfect-scrollbar.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

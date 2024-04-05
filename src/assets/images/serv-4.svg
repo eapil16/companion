@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="32" viewBox="0 0 36 32">
+  <g id="Group_1697" data-name="Group 1697" transform="translate(-330 -713)">
+    <path id="file-circle-check" d="M0,4A4,4,0,0,1,4,0H14V8a2,2,0,0,0,2,2h8v2.413a11.008,11.008,0,0,0-3.394,19.544A4.77,4.77,0,0,1,20,32H4a4,4,0,0,1-4-4ZM16,8V0l8,8Z" transform="translate(330 713)" fill="#b6bac2"/>
+    <path id="file-circle-check-2" data-name="file-circle-check" d="M36,23a9,9,0,1,1-9-9A9,9,0,0,1,36,23Zm-6.206-2.706L26,24.087l-1.794-1.794a1,1,0,1,0-1.412,1.412l2.5,2.5a.992.992,0,0,0,1.412,0l4.5-4.5a1,1,0,0,0-1.413-1.412Z" transform="translate(330 713)" fill="#bf3385"/>
+  </g>
+</svg>
