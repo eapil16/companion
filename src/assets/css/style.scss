@@ -7785,6 +7785,16 @@ body.hidden {
   }
 }
 
+.order-processing__sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+.basket-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
 @media (min-width: 992px) {
   .modal-lg, .modal-xl {
     max-width: 840px !important;
@@ -8026,7 +8036,13 @@ body.hidden {
 }
 
 @media screen and (max-width: 1199px) {
-  .order-processing__item {
+  .order-processing__sidebar {
+    top: 85px;
+  }
+  .basket-sidebar {
+    position: initial;
+  }
+    .order-processing__item {
     padding: 30px 20px;
   }
   .order-processing__sidebar {

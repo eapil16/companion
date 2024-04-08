@@ -9511,6 +9511,18 @@ body.hidden::after {
   color: #BF3385;
 }
 
+.order-processing__sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+
+.basket-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+
 @media (min-width: 992px) {
   .modal-lg, .modal-xl {
     max-width: 840px !important;
@@ -9768,6 +9780,12 @@ body.hidden::after {
 }
 
 @media screen and (max-width: 1199px) {
+  .order-processing__sidebar {
+    top: 85px;
+  }
+  .basket-sidebar {
+    position: initial;
+  }
   .order-processing__item {
     padding: 30px 20px;
   }
