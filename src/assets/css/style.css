@@ -11739,3 +11739,40 @@ body.hidden::after {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+/* 24 04 2024 */
+
+.product-slider__small_content {
+  height: 460px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 -10px 0 0;
+  padding: 0 10px 0 0;
+}
+
+.product-slider__small {
+  .ps__thumb-y {
+    width: 3px;
+    opacity: 1;
+  }
+  .ps__rail-y {
+    width: 6px;
+    opacity: 0.3;
+  }
+  .ps__rail-y:hover > .ps__thumb-y, .ps__rail-y:focus > .ps__thumb-y, .ps__rail-y.ps--clicking .ps__thumb-y {
+   width: 4px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .product-slider__small_content {
+    height: 392px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .product-slider {
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0 3.5px;
+    }
+  }
+}
+/*end  24 04 2024 */

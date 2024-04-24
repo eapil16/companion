@@ -579,10 +579,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const swiper5 = new Swiper(".mySwiper4", {
     loop: false,
-    spaceBetween: 6,
-    slidesPerView: 4,
+    spaceBetween: 'auto',
     freeMode: true,
     speed: 800,
+    slidesPerView: 7,
     watchSlidesProgress: true,
     breakpoints: {
       576: {
@@ -707,5 +707,19 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		});
 	}
+
+  // 24 04 2024
+
+  let sliderps ;
+
+  if (document.querySelector('.product-slider__small_content')) {
+    sliderps = new
+      PerfectScrollbar('.product-slider__small_content', {
+      wheelSpeed: 2,
+      wheelPropagation: true,
+      minScrollbarLength: 20
+    }); 
+  };
+  // end 24 04 2024
 
 });
